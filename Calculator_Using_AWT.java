@@ -11,6 +11,7 @@ class Calculator extends Frame implements ActionListener{
 		setSize(500,350);
 		display=new TextField("0");
 		display.setBounds(50, 50, 400, 50);
+		display.setEditable(false);
 	
 		add(display);
 		plus=new Button("+");
@@ -178,3 +179,4 @@ public class Calculator_Using_AWT {
 		Calculator c=new Calculator();
 	}
 }
+
