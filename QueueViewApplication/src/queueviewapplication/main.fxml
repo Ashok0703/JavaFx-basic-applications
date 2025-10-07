@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="queueviewapplication.MainController">
+   <children>
+      <ListView fx:id="view" layoutX="209.0" layoutY="17.0" prefHeight="363.0" prefWidth="372.0" />
+      <Button layoutX="67.0" layoutY="250.0" mnemonicParsing="false" onAction="#enqueueelement" prefHeight="3.0" prefWidth="131.0" text="EnQueue">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="67.0" layoutY="343.0" mnemonicParsing="false" onAction="#dequeueelement" prefHeight="25.0" prefWidth="131.0" text="DeQueue">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="element" layoutX="12.0" layoutY="211.0" prefHeight="25.0" prefWidth="187.0" promptText="Enter The Element">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Text layoutX="12.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QUEUE VIEW" textAlignment="CENTER" wrappingWidth="187.33333333333337">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" cycleMethod="REPEAT" focusAngle="-36.33" focusDistance="-0.7022900617759646" radius="0.6908397092164018">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7486553192138672" green="0.16200000047683716" blue="0.8999999761581421" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.1532488614320755" green="0.13645224273204803" blue="0.15789473056793213" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Button layoutX="67.0" layoutY="121.0" mnemonicParsing="false" onAction="#peekelement" prefHeight="3.0" prefWidth="131.0" text="Peek">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
