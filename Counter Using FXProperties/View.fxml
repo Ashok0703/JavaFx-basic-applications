@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.21728187919463085" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="counter.using.fxproperties.ViewController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="108.0" prefWidth="597.0">
+         <children>
+            <Label fx:id="label" alignment="CENTER" layoutX="216.0" layoutY="21.0" prefHeight="29.0" prefWidth="166.0" text="Count : 0">
+               <font>
+                  <Font name="Bell MT Italic" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.5701754093170166" green="0.10206843912601471" blue="0.10206843912601471" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.17640000581741333" green="0.6299999952316284" blue="0.18982578814029694" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <SplitPane dividerPositions="0.5" prefHeight="308.0" prefWidth="597.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="increase" contentDisplay="CENTER" layoutX="101.0" layoutY="138.0" mnemonicParsing="false" onAction="#increment" prefHeight="25.0" prefWidth="92.0" text="Increment" textAlignment="CENTER">
+                           <font>
+                              <Font name="Berlin Sans FB Bold" size="14.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.5701754093170166" green="0.10206843912601471" blue="0.10206843912601471" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.2667999863624573" green="0.80814129114151" blue="0.9200000166893005" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="301.0" prefWidth="296.0">
+                     <children>
+                        <Button fx:id="decrease" contentDisplay="CENTER" layoutX="99.0" layoutY="136.0" mnemonicParsing="false" onAction="#decrement" prefHeight="25.0" prefWidth="92.0" text="Decrement" textAlignment="CENTER">
+                           <font>
+                              <Font name="Berlin Sans FB Bold" size="14.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.5701754093170166" green="0.10206843912601471" blue="0.10206843912601471" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.2667999863624573" green="0.80814129114151" blue="0.9200000166893005" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
