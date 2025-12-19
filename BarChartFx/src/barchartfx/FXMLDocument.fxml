@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="472.0" prefWidth="612.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/24.0.1" fx:controller="barchartfx.FXMLDocumentController">
+   <children>
+      <BarChart fx:id="bargraph" barGap="5.0" layoutX="28.0" layoutY="14.0" prefHeight="411.0" prefWidth="555.0" title="Devices Satistics">
+        <xAxis>
+          <CategoryAxis fx:id="category" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="no_devices" label="No Of Devoices" side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>
