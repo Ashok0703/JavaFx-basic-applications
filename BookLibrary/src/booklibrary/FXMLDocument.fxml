@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="479.0" prefWidth="750.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="booklibrary.FXMLDocumentController">
+   <children>
+      <VBox layoutX="14.0" layoutY="25.0" prefHeight="179.0" prefWidth="65.0" spacing="20.0">
+         <children>
+            <Label layoutX="10.0" layoutY="10.0" text="Title :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="27.0" text="Author :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="45.0" text="PageNo :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="79.0" layoutY="25.0" prefHeight="135.0" prefWidth="194.0" spacing="13.0">
+         <children>
+            <TextField fx:id="tftitle" layoutX="10.0" layoutY="10.0" prefHeight="5.0" prefWidth="147.0" />
+            <TextField fx:id="tfauthor" layoutX="10.0" layoutY="35.0" />
+            <TextField fx:id="tfpageno" layoutX="10.0" layoutY="61.0" />
+         </children>
+      </VBox>
+      <TableView fx:id="tv" layoutX="289.0" layoutY="25.0" onMouseClicked="#rowClicked" prefHeight="405.0" prefWidth="447.0">
+        <columns>
+          <TableColumn fx:id="colid" prefWidth="38.6666259765625" text="ID" />
+          <TableColumn fx:id="coltitle" prefWidth="177.333251953125" text="TITLE" />
+            <TableColumn fx:id="colauthor" prefWidth="163.99996948242188" text="AUTHOR" />
+            <TableColumn fx:id="colpageno" prefWidth="78.66668701171875" text="PAGENO" />
+        </columns>
+      </TableView>
+      <Button fx:id="btninsert" layoutX="147.0" layoutY="153.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="126.0" text="Insert Book">
+         <graphic>
+            <ImageView fitHeight="21.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@add.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnupdate" layoutX="147.0" layoutY="339.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="126.0" text="Update Book">
+         <graphic>
+            <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@updated.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btndelete" layoutX="147.0" layoutY="376.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="126.0" text="Delete Book">
+         <graphic>
+            <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@delete.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <TextField fx:id="tfid" layoutX="189.0" layoutY="289.0" prefHeight="25.0" prefWidth="83.0" />
+      <Label layoutX="147.0" layoutY="292.0" text="ID :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
